@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Bar</title>
+  <link rel="icon" href="./assets/img/logo.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/inicio.css" />
+  <link rel="stylesheet" href="./assets/css/opiniones.css" />
+  <link rel="stylesheet" href="./assets/css/scroll.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="icon" href="assets/img/favicon.png" type="icono-de-pagina" sizes="32x32" />
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script defer src="./assets/js/script.js"></script>
+  <script defer src="./assets/js/cart.js"> </script>
+  <script defer src="./assets/js/contacto.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/contacto.css">
+  <link rel="stylesheet" href="./assets/css/eventos.css">
+</head>
+
+<body>
+  <!-- Felcha para la barra de progreso -->
+  <div id="progress">
+    <i class="fas fa-arrow-up fa-2x"></i>
+  </div>
+
+
+  <header>
+   <img id="logo" src="./assets/img/logo.png" alt="logo superbar" />
+    <div id="menu-icon">&#9776;</div>
+    <nav class="nav">
+      <a href="#" class="logo nav-link">
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#Inicio" class="nav-menu-link nav-link nav-menu-link_active">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#opiniones" class="nav-menu-link nav-link">Reseñas</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#menu" class="nav-menu-link nav-link">MENÚ</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#eventos" class="nav-menu-link nav-link">Eventos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" style="
+        background-image: url('./assets/img/fondo-inicio.jpg');
+        background-size: cover;
+      ">
+    <h2>¡Bienvenidos a Super Bar!</h2>
+    <p>
+      En Super Bar, hemos creado un lugar único para que disfrutes de la noche
+      en su máxima expresión. Somos tu refugio en la ciudad, donde la comida
+      es exquisita, las sonrisas son contagiosas y los tragos son
+      inolvidables.
+    </p>
+    <a href="./reservacion.html" class="cta-button">Reservar una Mesa</a>
+
+                                                                                       <a href="./proyecto2/productos.html" class="cta-button">Productos</a>
+
+    <a href="#menu" class="cta-button">Ver menú</a>
+  </section>
+
+  <section id="opiniones" class="opiniones-section">
+    <h2>Opiniones de Clientes</h2>
+    <div class="opiniones-container">
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente.jpg" alt="Cliente 1" />
+        <p>
+          "Una experiencia increíble. La comida y el ambiente son
+          excepcionales. ¡Volveré seguro!"
+        </p>
+      </div>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente2.jpg" alt="Cliente 2" />
+        <p>
+          "Super Bar es mi lugar favorito en la ciudad. Siempre me siento
+          bienvenido aquí."
+        </p>
+      </div>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente3.jpg" alt="Cliente 3" />
+        <p>
+          "No puedo creer lo fantástico que es Super Bar. Cada visita es una delicia para los sentidos. ¡Libertad y
+          buenos tragos!"
+        </p>
+      </div>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente4.jpg" alt="Cliente 4" />
+        <p>
+          "Super Bar es el lugar donde hago mis mejores recuerdos. ¡La comida
+          es sublime!"
+        </p>
+      </div>
+      <!-- Agrega más opiniones según sea necesario -->
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="menu-category">
+      <h2>Aperitivos</h2>
+      <ul>
+        <li class="menu-item" data-name="Papas Bravas" data-price="5.99">
+          <span class="menu-item-name">Papas Bravas: Papas fritas crujientes servidas con una salsa picante y una mayonesa alioli.</span>
+          <span class="menu-item-price">$5.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Anillo de Cebolla" data-price="6.99">
+          <span class="menu-item-name">Anillo de Cebolla: Anillos de cebolla empanizados y fritos, acompañados de salsa de mostaza y miel.</span>
+          <span class="menu-item-price">$6.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Bastones de Mozzarella" data-price="4.99">
+          <span class="menu-item-name">Bastones de Mozzarella: Bastones de mozzarella, servidos con salsa marinara.</span>
+          <span class="menu-item-price">$4.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Papas con Chili y Queso" data-price="4.99">
+          <span class="menu-item-name">Papas con Chili y Queso: Papas fritas cubiertas con chili, carne y queso cheddar derretido, con un toque de cebolla picada y jalapeños.</span>
+          <span class="menu-item-price">$3.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Cocteles</h2>
+      <ul>
+        <li class="menu-item" data-name="Coctel 1" data-price="8.99">
+          <span class="menu-item-name"><p>Fernet con Coca: </p> <p>Fernet Branca con Coca-Cola</p></span>
+          <span class="menu-item-price">$8.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 2" data-price="9.99">
+          <span class="menu-item-name"><p>Campari con Naranja:</p> <p> Campari con jugo de naranja y una rodaja de naranja</p></span>
+          <span class="menu-item-price">$9.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 3" data-price="7.99">
+          <span class="menu-item-name"><p>Cubalibre:</p> <p> Ron, Coca-Cola y limón</p></span>
+          <span class="menu-item-price">$7.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 4" data-price="10.99">
+          <span class="menu-item-name"><p>Negroni:</p> <p>Campari, vermut rojo, ginebra y una rodaja de naranja</p></span>
+          <span class="menu-item-price">$10.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 5" data-price="11.99">
+          <span class="menu-item-name"><p>Mojito:</p> <p>Ron blanco, azúcar, menta, lima, soda</p></span>
+          <span class="menu-item-price">$11.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 6" data-price="12.99">
+          <span class="menu-item-name"><p>Martini:</p> <p>Ginebra o vodka, vermut seco o dulce, aceituna</p></span>
+          <span class="menu-item-price">$12.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 7" data-price="13.99">
+          <span class="menu-item-name"><p>Daiquiri:</p> <p>Ron blanco, jugo de limón, jarabe simple</p></span>
+          <span class="menu-item-price">$13.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Cervezas</h2>
+      <h4>Tradicionales</h4>
+      <ul>
+        <li class="menu-item" data-name="Cerveza 1" data-price="3.99">
+          <span class="menu-item-name">Quilmes</span>
+          <span class="menu-item-price">$3.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 2" data-price="4.99">
+          <span class="menu-item-name">Patagonia</span>
+          <span class="menu-item-price">$4.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 3" data-price="4.99">
+          <span class="menu-item-name">Corona</span>
+          <span class="menu-item-price">$4.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 4" data-price="5.99">
+          <span class="menu-item-name">Antares</span>
+          <span class="menu-item-price">$5.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 5" data-price="6.99">
+          <span class="menu-item-name">Stella Artois</span>
+          <span class="menu-item-price">$6.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+      <h4>Artesanales</h4>
+      <ul>
+        <li class="menu-item" data-name="Cerveza 1" data-price="7.99">
+          <span class="menu-item-name">IPA, APA, Amber, Lager, Porter.</span>
+          <span class="menu-item-price">$7.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Vinos</h2>
+      <ul>
+        <li class="menu-item" data-name="Vino 1" data-price="12.99">
+          <span class="menu-item-name">Rutini Cabernet Malbec</span>
+          <span class="menu-item-price">$12.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 2" data-price="14.99">
+          <span class="menu-item-name">Vino Del Fin DeL Mundo Reserva Chardonnay</span>
+          <span class="menu-item-price">$14.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 3" data-price="11.99">
+          <span class="menu-item-name">Finca La Linda Chardonnay Blanco</span>
+          <span class="menu-item-price">$11.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 4" data-price="11.99">
+          <span class="menu-item-name">Limousin Reserva Malbec Blanco</span>
+          <span class="menu-item-price">$11.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 5" data-price="13.99">
+          <span class="menu-item-name">Vino Don David Malbec</span>
+          <span class="menu-item-price">$13.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 6" data-price="14.99">
+          <span class="menu-item-name">Vino Finca La Anita Malbec</span>
+          <span class="menu-item-price">$14.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="eventos">
+    <h2>Próximos Eventos</h2>
+    <p>Descubre los emocionantes eventos que tenemos preparados para ti. ¡No te los pierdas!</p>
+    <ul>
+      <li>
+        <strong>26/10</strong> - Noche de Karaoke.
+      </li>
+      <li>
+        <strong>27/10</strong> - Especial Noche de HALLOWEEN.
+      </li>
+      <li>
+        <strong>29/10</strong> - Tango de Domingo.
+      </li>
+      <li>
+        <strong>04/11</strong> - Noche de Stand Up.
+        <br>
+        <span>Con la participación de Connie Ballarini, Ezequiel Campa y más.</span>
+      </li>
+      <li>
+        <strong>11/11</strong> - Noche de Birras.
+        <br>
+        <span>¡4x1 en Media Pinta para ti y tus amigos!</span>
+      </li>
+    </ul>
+  </section>
+
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <address id="info-contacto">
+        <p>
+            Dirección: Av. Santa Fe & Av. Callao, Ciudad Autónoma de Buenos Aires, Argentina.
+        </p>
+        <p>Teléfono: +123 456 789</p>
+        <p>
+            Email: <a href="mailto:info@nombre-del-bar.com">info@superbar.com</a>
+        </p>
+    </address>
+    <div id="formulario-contacto">
+        <form action="https://formspree.io/f/xgejrqwp" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 Super Bar Codo a Codo</p>
+    <img src="./assets/img/logo-codoacodo.png" alt="Logo de Super Bar" />
+  </footer>
+  <div id="cart-icon-container">
+    <i class="fas fa-shopping-cart" id="cart-icon"></i>
+    <span id="cart-item-count" class="item-count">0</span>
+  </div>
+  <aside id="cart-aside" class="cart-aside">
+    <i class="fas fa-times" id="cart-close-button"></i>
+    <div class="cart-content" id="cart-content-aside">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-items-aside">
+      </ul>
+      <p>Total: <span id="cart-total-aside">$0.00</span></p>
+      <button id="checkout-button" class="checkout-button">Realizar Compra</button>
+    </div>
+  </aside>
+</body>
+</html>

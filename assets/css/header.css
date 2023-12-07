@@ -1,0 +1,56 @@
+/* Definición de variables */
+:root {
+    --header-background: #333;
+    --text-color: #fff;
+    --link-color: #ffcc00;
+    --link-hover-color: #ffcc00; 
+    --link-zoom-scale: 1.25; 
+    --link-transition-duration: 
+}
+
+#logo {
+    width: 100px; 
+    height: auto; 
+  }
+  
+
+/* Estilo base del header */
+header {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    position: relative;
+    transition: transform var(--link-transition-duration); 
+}
+
+
+nav li:hover {
+    transform: scale(var(--link-zoom-scale)); 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Cambiar el color de texto al pasar el mouse */
+nav li:hover a {
+    color: var(--link-hover-color); 
+}
+
+nav li:not(:hover) {
+    transform: scale(1);
+}

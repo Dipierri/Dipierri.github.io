@@ -1,0 +1,56 @@
+:root {
+    --opiniones-background: #666; 
+    --opiniones-text: #ffcc00;
+    --opiniones-container-bg: #222; 
+    --opiniones-border: #794a02; 
+    --opiniones-border-radius: 5px; 
+    --opiniones-padding: 20px;
+    --opiniones-max-width: 300px; 
+    --opiniones-img-max-width: 100px; 
+    --opiniones-img-border-radius: 50%; 
+    --opiniones-font-size: 16px; 
+    --opiniones-link-hover: #ff9900; 
+  }
+  
+  /* Estilos para la sección de opiniones */
+  .opiniones-section {
+    background-color: var(--opiniones-background);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #opiniones {
+    margin-left: 4%; 
+    margin-right: 4%;
+  }
+  .opiniones-container {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .opinion {
+    background-color: var(--opiniones-container-bg);
+    border: 1px solid var(--opiniones-border);
+    border-radius: var(--opiniones-border-radius);
+    padding: var(--opiniones-padding);
+    max-width: var(--opiniones-max-width);
+    text-align: center;
+  }
+  
+  .opinion img {
+    max-width: var(--opiniones-img-max-width);
+    border-radius: var(--opiniones-img-border-radius);
+    margin-bottom: 10px;
+  }
+  
+  .opinion p {
+    font-size: var(--opiniones-font-size);
+    color: var(--opiniones-text);
+  }
+  
+  .opinion a:hover {
+    background-color: var(--opiniones-link-hover);
+  }
+  
